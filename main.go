@@ -29,7 +29,6 @@ func getPlayers(conn *rcon.Conn) []string {
 	if err != nil {
 		log.Print(err)
 	}
-	fmt.Println(response)
 	return parseResponse(response)
 }
 
