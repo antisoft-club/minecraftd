@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  minecrafd:
+    build:
+      context: .
+    image: minecrafd
+    environment:
+      RCON_HOST: "1.2.3.4"
+      RCON_PASS: "rcon_password"
+      RCON_PORT: "25575"
+      DISCORD_TOKEN: "discord_token"
+      DISCORD_CHANNEL: "discord_channel_id"

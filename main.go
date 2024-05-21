@@ -48,7 +48,7 @@ func main() {
 		log.Fatal("Missing RCON_PORT value")
 	}
 
-	_, err := strconv.Atoi(rcon_port)
+	_, err := strconv.Atoi(strings.TrimSpace(rcon_port))
 
 	if err != nil {
 		log.Fatalf("Unable to read RCON_PORT value %s as int", rcon_port)
